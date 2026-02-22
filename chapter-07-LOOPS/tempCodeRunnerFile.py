@@ -1,3 +1,2 @@
- # if i == 2:
-    #     continue
-    # print(i)
+for i in range(6):
+    print(i)
