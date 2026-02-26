@@ -1,3 +1,7 @@
+# This code generates multiplication tables from 2 to 21 and saves each table in a separate text file 
+# within a folder named "tables". Each file is named "table_n.txt", 
+# where n is the number for which the multiplication table is generated.
+
 def generateTable(n):     # created the function called generateTable
     table = ""            # defined the variable value as empty where the tables will be stored
     for i in range(1,11):       # use for loop from 1 to 11

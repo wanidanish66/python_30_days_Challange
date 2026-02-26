@@ -1,0 +1,4 @@
+hello
+the user has logged in
+the user just logged out
+the user is goog with Python
