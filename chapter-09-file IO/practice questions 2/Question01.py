@@ -1,3 +1,6 @@
+#  this question reads the file named content.txt and then prints the number of words present in the file 
+# and the number of lines and the number of characters present in the file
+
 with open("content.txt") as file:
     text = file.read()
     words = text.split()
