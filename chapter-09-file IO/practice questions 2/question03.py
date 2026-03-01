@@ -1,3 +1,6 @@
+# this program will read the content of a file named content.txt and write it to another file named output.txt and then 
+# count the number of times the word "micro" appears in the text and print it to the user
+
 with open("content.txt") as file:
     text = file.read()
     
