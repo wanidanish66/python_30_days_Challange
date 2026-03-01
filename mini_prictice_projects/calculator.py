@@ -10,9 +10,11 @@ def divide(a,b):
     if b == 0:
         return "Error: Division by zero is not allowed."
     return a / b
+def power(a,b):
+    return a ** b
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 
 
 
@@ -20,7 +22,8 @@ aval_operations = {   # Dictionary mapping user commands to corresponding functi
     '+': add,
     '-': subtract,
     '*': multiply,
-    '/': divide
+    '/': divide,
+    '^': power
 }
 
 command = input("Enter your command: ")
