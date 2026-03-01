@@ -1,0 +1,2 @@
+python -u "d:\python_30_days_Challange\mini_prictice_projects\contact_book.py" : python -u "d:\python_30_days_Challange\mini_prictice_projects\contact_book.py"
+micro : 7412369
