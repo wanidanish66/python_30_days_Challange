@@ -1,19 +1,22 @@
 # this is a simple programm of multiple inheritance
 
 class Vector2d:
-    x = 4
-    y = 5
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+        
     def show(self):
         print(f"the value of x is {self.x} and the value of y is {self.y}")
 
 class Vector3d(Vector2d):
-    def showZ(self,z):
+    def __init__(self, x, y, z):
+        super().__init__(x, y)
         self.z = z
-        print(f"the value of z = {self.z}")
+    def showZ(self):
+        print(f"the value of x is {self.x} the value of y is {self.y} and  z is {self.z}")
 
-a = Vector2d()
-b = Vector3d()
+a = Vector2d(3,5)
+a.show()
 
-print(b.x,b.y)
-b.show()
-b.showZ("6")
+b = Vector3d(2,4,5)
+b.showZ()
