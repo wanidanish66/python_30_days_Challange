@@ -1,17 +1,18 @@
 # this is a programme to use property decorators
 
 class Employee:
-    salary = "300k"
-
+    salary = 30000
+    increment = 20
     @property
     def salaryAfterIncrement(self):
-        return f"the salary after increament is {self.salary}"
+        return (self.salary + self.salary * (self.increment/100))
     
     @salaryAfterIncrement.setter  
-    def salaryAfterIncrement(self,value): 
-        self.salary = value
+    def salaryAfterIncrement(self,salary): 
+        self.increment = ((salary / self.salary) -1) *100
 
 s = Employee()
-s.salaryAfterIncrement = "500k"
+print(s.salaryAfterIncrement)
 
-print(s.salary)
+s.salaryAfterIncrement = 306000
+print(s.increment)
